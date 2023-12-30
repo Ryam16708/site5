@@ -1,0 +1,222 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+main{
+    background-color: blue;
+    background: linear-gradient(to right, #fff, rgb(160, 160, 236));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Principal{
+
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    position: absolute;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.Principal p{
+    font-size:14px ;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+.Principal span{
+    font-size: 12px;
+}
+
+.form-control {
+    width: 300px;
+}
+.form-control.sucesso input {
+    border: 3px solid greenyellow; 
+}
+.form-control.error input {
+    border: 3px solid red; 
+}
+   
+.Principal a{
+    color:blue;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.Principal button{
+    background-color:blue;
+    color: black;
+    font-size: 12px;
+    padding: 10px 53px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.Principal button.butao {
+    background-color: transparent;
+    border-color: #fff; 
+}
+
+.Principal form  {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.Principal input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.lado-Principal  {
+    
+    position: absolute;
+    top: 0%;
+    height: 100%                ;
+    transition: all 0.6s ease-in-out;
+}
+.l2{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.Principal.active .l2{
+    transform: translate(100%);
+}
+
+.l1{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.Principal.active .l1{
+    transform: translate(100%);
+    opacity: 10;
+    z-index: 5;
+    animation: move 0.6s;
+}
+@keyframes move {
+    0%, 44.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+
+    }
+}
+.painel-Principal{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 150px 0 0 100px;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+}
+.Principal.active .painel-Principal{
+    transform: translate(-100%);
+    border-radius: 0 150px 100px 0;
+}
+.painel-geral {
+    background-color: blue;
+    height: 100%;
+    background: linear-gradient(to right, );
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translate(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.Principal.active .painel-geral{
+    transform: translate(50%);
+}
+
+.painel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translate(0);
+    transition: all 0.6s ease-in-out;
+
+}
+
+.p-esquerdo {
+    transform: translate(-200%);
+}
+
+.Principal.active .p-esquerdo {
+    transform: translate(0);
+}
+
+.p-direito {
+    right: 0;
+    transform: translate(0);
+
+}
+.Principal.active .p-direito {
+    transform: translate(200%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

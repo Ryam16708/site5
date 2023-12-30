@@ -1,0 +1,63 @@
+
+
+* {
+    font-family: 'inter' sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+main {
+     height: 120vh;
+
+}
+footer {
+    width: 100%;
+    color: black;
+}
+#rodape {
+    background-color: #1f599b;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem 1.5rem;
+}
+#rodape-2 h1 img{
+    margin-bottom: 0.75rem;
+   box-shadow: 2px 2px 5px black;
+}
+#rodape-2 a {
+    text-decoration: none;
+    color: white;
+    transition: background .5s;
+}
+#rodape-2 a:hover {
+    background-color: black;
+}
+#rodape-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#rodape-links link {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+#rodape-links link i {
+    font-size: 1.25rem  ;
+}#copy {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: rgb(205, 199, 199);
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+@keyframes degrade-animado{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}

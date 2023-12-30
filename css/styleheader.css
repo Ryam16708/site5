@@ -1,0 +1,40 @@
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    padding: 0px;
+}
+nav {
+    background-image: linear-gradient(to left, #1f599b,black);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+nav .logo {
+    color: white;
+    float: left;
+    display: block;
+}
+nav a {
+    color: white;
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    transition: background .5s;
+}
+nav a:hover {   
+    background-color: black;
+    
+
+}
+@keyframes degrade-animado{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}

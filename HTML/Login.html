@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sortiei</title>
+
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/styleheader.css">
+    <link rel="stylesheet" href="../css/stylemain-login.css">
+    <link rel="stylesheet" href="../css/stylefooter.css">
+    <link rel="stylesheet" href="../css/stylemain-login.css">
+</head>
+<body>
+
+    <header>
+        <nav> 
+            <div class="logo"><a href="../HTML/Login.html" ><img src="../Imagens/favicon-16x16.png" alt="" style="background-color: transparent;"></a></div>
+               <a href="../HTML/Login.html">Login</a>
+               <a href="suportetwo.html">Suporte</a>
+               <a href="../HTML/sobretwo.html">Sobre</a>
+               
+        </nav>
+    </header>
+
+
+    <main>
+         <div class="Principal" id="Principal">
+            <div class="lado-Principal l1">
+                <form class="form1" id="form1">
+
+                    <h1>Criar uma conta</h1>
+
+                    <span> Informe seus dados </span>
+
+                    <div class="form-control" >    
+                        <input type="text" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-control">
+                        <input type="email" id="email" placeholder="Email">  
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="senha" placeholder="Senha">
+                    </div>
+                    <button type="submit" onclick="checkInputs(); return false">Registrar-se</button>
+            
+                </form>
+            </div>
+            <div class="lado-Principal l2">
+                <form>
+                    <h1>Entrar</h1>
+                    
+                    <span> Informe seus dados </span>
+                    
+                    <input type="email" placeholder="Email" id="email267">
+                    <input type="password" placeholder="Senha" id="senha267">
+                    <button type="submit" onclick="logar();  return false">Entrar</button>
+                
+                </form>
+            </div>
+            <div class="painel-Principal">
+                <div class="painel-geral">
+                    <div class="painel p-esquerdo">
+                        <h1>Seja bem-vindo</h1>
+                        <p>Entre com seus dados pessoais</p>
+                        <button class="butao" id="login">Entrar</button>
+                    </div>
+                    <div class="painel p-direito">
+                        <h1>Ola</h1>
+                        <p>Registre-se com seus dados pessoais</p>
+                        <button class="butao" id="registrar">Cadastra-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/script-login.js"></script>
+        <script src="../js/Validação-login.js"></script>
+    </main>
+
+    <footer>
+        <div id="rodape">
+            <div id="rodape-2">
+                <h1><a href="Login.html" style="background-color: transparent;"><img src="../Imagens/favicon-32x32.png" alt=""></a></h1>
+
+            <p><a href="Login.html">sotiei.com.br</a></p>
+            
+            
+            <div id="rodape-links">
+                <a href="#" class="link" id="insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="#" class="link" id="face">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                
+                <a href="#" class="link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            </div>
+            
+            
+        </div> 
+        <div id="copy">
+            &#169
+            2023 all reserved rights
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--Essa página foi criado um login, para que o usuarrio possa acessar o site atras de um email e senha, aqui também foi criado uma tela cadastrar-->
+<!--Foi utilizado algumas divs, organizando a tela, e dentro da 'form' foi criado os inputs e a parte onde ira receber os dados do úsuario, também foi utilizado alguns botoes para pode cadastrar e acessar a tela principal.
+-->
